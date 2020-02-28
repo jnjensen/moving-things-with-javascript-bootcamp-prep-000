@@ -30,7 +30,7 @@
         var left = parseInt(leftNumbers, 10)
         var outline = document.getElementById('game')
         var outlineStyle = getComputedStyle(outline)
-        outlineStyle = outlineStyle.replace('px','')
+        outlineStyle = outlineStyle.width.replace('px','')
         console.log(outlineStyle)
         var object = getComputedStyle(dodger)
         var end = (parseInt(outline.width))-(parseInt(object.width))
