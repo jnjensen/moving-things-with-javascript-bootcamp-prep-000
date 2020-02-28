@@ -28,15 +28,17 @@
       function moveDodgerRight(){
         var leftNumbers = dodger.style.left.replace('px', '')
         var left = parseInt(leftNumbers, 10)
+        
         var outline = document.getElementById('game')
         var outlineStyle = getComputedStyle(outline)
         outlineStyle = outlineStyle.width.replace('px','')
         outlineStyle = parseInt(outlineStyle, 10)
+        
         var object = getComputedStyle(dodger)
         object = object.width.replace('px','')
         object = parseInt(object, 10)
-        console.log(outlineStyle, object)
-        var end = parseInt(outlineStyle - end)
+        
+        var end = 400 - 40
         console.log(end)
         
         if (left < 360){
