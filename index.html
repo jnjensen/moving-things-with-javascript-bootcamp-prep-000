@@ -28,8 +28,7 @@
       function moveDodgerRight(){
         var leftNumbers = dodger.style.left.replace('px', '')
         var left = parseInt(leftNumbers, 10)
-        var outside = document.getElementById('game') 
-        var end = outside.style.width
+        var end = document.getElementById('game').style.width
         console.log(end)
         var farRight = end - (dodger.style.width)
         console.log(farRight)
