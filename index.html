@@ -29,10 +29,7 @@
         var leftNumbers = dodger.style.left.replace('px', '')
         var left = parseInt(leftNumbers, 10)
         var outline = document.getElementById('game')
-        outline.style.width = '400px'
-        var end = outline.style.width
-        var farRight = end - (dodger.style.width)
-        console.log(farRight)
+        var outlineStyle = 
         
         if (left < farRight){
           dodger.style.left = `${left + 1}px`
