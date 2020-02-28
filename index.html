@@ -31,9 +31,12 @@
         var outline = document.getElementById('game')
         var outlineStyle = getComputedStyle(outline)
         outlineStyle = outlineStyle.width.replace('px','')
+        outlineStyle = parseInt(outlineStyle, 10)
         var object = getComputedStyle(dodger)
         object = object.width.replace('px','')
-        var end = (parseInt(outline,10))-(parseInt(object, 10))
+        object = parseInt(object, 10)
+        console.log(outlineStyle, object)
+        var end = outlineStyle - end
         console.log(end)
         
         if (left < end){
