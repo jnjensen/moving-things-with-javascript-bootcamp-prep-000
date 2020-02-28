@@ -38,10 +38,10 @@
         object = object.width.replace('px','')
         object = parseInt(object, 10)
         
-        var end = 400 - 40
+        var end = object
         console.log(end)
         
-        if (left < 360){
+        if (left < end){
           dodger.style.left = `${left + 1}px`
         }
       }
