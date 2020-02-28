@@ -33,7 +33,7 @@
         outlineStyle = outlineStyle.width.replace('px','')
         var object = getComputedStyle(dodger)
         object = object.width.replace('px','')
-        var end = (parseInt(outline.width),10)-(parseInt(object.width))
+        var end = (parseInt(outline,10))-(parseInt(object, 10))
         console.log(end)
         
         if (left < end){
