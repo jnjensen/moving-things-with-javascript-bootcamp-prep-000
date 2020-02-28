@@ -29,7 +29,7 @@
         var leftNumbers = dodger.style.left.replace('px', '')
         var left = parseInt(leftNumbers, 10)
         var outside = document.getElementById('game') 
-        var end = outside.style.width
+        var end = outside.width()
         
         if (left < 200){
           dodger.style.left = `${left + 1}px`
