@@ -30,8 +30,9 @@
         var left = parseInt(leftNumbers, 10)
         var outside = document.getElementById('game') 
         var end = outside.width()
+        var farRight = end - (dodger.width())
         
-        if (left < 200){
+        if (left < farRight){
           dodger.style.left = `${left + 1}px`
         }
       }
