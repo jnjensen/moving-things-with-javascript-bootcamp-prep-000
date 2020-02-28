@@ -31,9 +31,10 @@
         var outline = document.getElementById('game')
         var outlineStyle = getComputedStyle(outline)
         var object = getComputedStyle(dodger)
-        var end = ()
+        var end = (outline.width)-(object.width)
+        console.log(end)
         
-        if (left < farRight){
+        if (left < end){
           dodger.style.left = `${left + 1}px`
         }
       }
